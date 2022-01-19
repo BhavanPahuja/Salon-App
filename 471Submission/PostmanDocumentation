@@ -1,0 +1,2230 @@
+{
+	"info": {
+		"_postman_id": "52c189f0-1a81-4c25-be69-345b3cc50d04",
+		"name": "SalonDatabase",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Customer",
+			"item": []
+		},
+		{
+			"name": "Employee",
+			"item": [
+				{
+					"name": "getAppointments",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/salonapp/frontend/employee/getAppointmentsLogic.php",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"salonapp",
+								"frontend",
+								"employee",
+								"getAppointmentsLogic.php"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "getAppointments",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost/salonapp/frontend/employee/getAppointmentsLogic.php",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"salonapp",
+										"frontend",
+										"employee",
+										"getAppointmentsLogic.php"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Fri, 16 Apr 2021 10:17:42 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.46 (Win64) OpenSSL/1.1.1j PHP/8.0.3"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.0.3"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1136"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "JSON"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"idservice\": \"1\",\n        \"idclient\": \"1\",\n        \"idstylist\": \"1\",\n        \"idreceptionist\": \"1\",\n        \"startdatetime\": \"2021-04-28 16:00:00\",\n        \"enddatetime\": \"2021-04-28 17:00:00\",\n        \"previousapt\": \"2021-03-27\",\n        \"previousservice\": \"haircut\"\n    },\n    {\n        \"idservice\": \"2\",\n        \"idclient\": \"2\",\n        \"idstylist\": \"2\",\n        \"idreceptionist\": \"2\",\n        \"startdatetime\": \"2021-04-29 16:00:00\",\n        \"enddatetime\": \"2021-04-29 17:00:00\",\n        \"previousapt\": \"2021-03-28\",\n        \"previousservice\": \"color\"\n    },\n    {\n        \"idservice\": \"3\",\n        \"idclient\": \"1\",\n        \"idstylist\": \"1\",\n        \"idreceptionist\": \"1\",\n        \"startdatetime\": \"2021-03-27 15:00:00\",\n        \"enddatetime\": \"2021-03-27 16:00:00\",\n        \"previousapt\": null,\n        \"previousservice\": null\n    },\n    {\n        \"idservice\": \"4\",\n        \"idclient\": \"2\",\n        \"idstylist\": \"2\",\n        \"idreceptionist\": \"2\",\n        \"startdatetime\": \"2021-03-28 08:00:00\",\n        \"enddatetime\": \"2021-03-28 10:00:00\",\n        \"previousapt\": null,\n        \"previousservice\": null\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "getCharacteristics",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/salonapp/frontend/employee/getCharacteristicsLogic.php",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"salonapp",
+								"frontend",
+								"employee",
+								"getCharacteristicsLogic.php"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "getCharacteristics",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost/salonapp/frontend/employee/getCharacteristicsLogic.php",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"salonapp",
+										"frontend",
+										"employee",
+										"getCharacteristicsLogic.php"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Fri, 16 Apr 2021 10:17:21 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.46 (Win64) OpenSSL/1.1.1j PHP/8.0.3"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.0.3"
+								},
+								{
+									"key": "Content-Length",
+									"value": "392"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "JSON"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"clientno\": \"1\",\n        \"colorformula\": null,\n        \"length\": null,\n        \"texture\": null,\n        \"style\": \"pixie\",\n        \"notes\": null\n    },\n    {\n        \"clientno\": \"2\",\n        \"colorformula\": \"Schwarzkopf 4N Permanent Color\",\n        \"length\": null,\n        \"texture\": \"curly\",\n        \"style\": \"long bob\",\n        \"notes\": \"Went to Mexico in January!\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "getClients",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/salonapp/frontend/employee/getClientsLogic.php",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"salonapp",
+								"frontend",
+								"employee",
+								"getClientsLogic.php"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "getClients",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost/salonapp/frontend/employee/getClientsLogic.php",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"salonapp",
+										"frontend",
+										"employee",
+										"getClientsLogic.php"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Fri, 16 Apr 2021 10:15:53 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.46 (Win64) OpenSSL/1.1.1j PHP/8.0.3"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.0.3"
+								},
+								{
+									"key": "Content-Length",
+									"value": "775"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "JSON"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"clientid\": \"1\",\n        \"salonno\": \"1\",\n        \"phone\": \"(403)234-2383\",\n        \"firstname\": \"Karen\",\n        \"lastname\": \"Johnson\",\n        \"email\": \"karen@gmail.com\",\n        \"address\": \"124 Centre North Ave NE\",\n        \"postalcode\": \"T2L 5H7\",\n        \"city\": \"Calgary\",\n        \"stateorprovince\": \"Alberta\",\n        \"country\": \"Canada\",\n        \"discount\": \"10%\"\n    },\n    {\n        \"clientid\": \"2\",\n        \"salonno\": \"2\",\n        \"phone\": \"(702)809-2872\",\n        \"firstname\": \"Sara\",\n        \"lastname\": \"Evans\",\n        \"email\": \"sara@gmail.com\",\n        \"address\": \"432 North Crescent NW\",\n        \"postalcode\": \"88910\",\n        \"city\": \"Las Vegas\",\n        \"stateorprovince\": \"Nevada\",\n        \"country\": \"USA\",\n        \"discount\": null\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "getEquipment",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/salonapp/frontend/employee/getEquipmentLogic.php",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"salonapp",
+								"frontend",
+								"employee",
+								"getEquipmentLogic.php"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "getEquipment",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost/salonapp/frontend/employee/getEquipmentLogic.php",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"salonapp",
+										"frontend",
+										"employee",
+										"getEquipmentLogic.php"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Fri, 16 Apr 2021 10:14:37 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.46 (Win64) OpenSSL/1.1.1j PHP/8.0.3"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.0.3"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1396"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "JSON"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"equipmentid\": \"1\",\n        \"employeeno\": null,\n        \"name\": \"Schwarzkopf 1N Permanent Color\"\n    },\n    {\n        \"equipmentid\": \"2\",\n        \"employeeno\": null,\n        \"name\": \"Schwarzkopf 2N Permanent Color\"\n    },\n    {\n        \"equipmentid\": \"3\",\n        \"employeeno\": null,\n        \"name\": \"Schwarzkopf 3N Permanent Color\"\n    },\n    {\n        \"equipmentid\": \"4\",\n        \"employeeno\": null,\n        \"name\": \"Schwarzkopf 4N Permanent Color\"\n    },\n    {\n        \"equipmentid\": \"5\",\n        \"employeeno\": null,\n        \"name\": \"Schwarzkopf 5N Permanent Color\"\n    },\n    {\n        \"equipmentid\": \"6\",\n        \"employeeno\": null,\n        \"name\": \"Schwarzkopf 6N Permanent Color\"\n    },\n    {\n        \"equipmentid\": \"7\",\n        \"employeeno\": null,\n        \"name\": \"Schwarzkopf 7N Permanent Color\"\n    },\n    {\n        \"equipmentid\": \"8\",\n        \"employeeno\": null,\n        \"name\": \"Schwarzkopf 8N Permanent Color\"\n    },\n    {\n        \"equipmentid\": \"9\",\n        \"employeeno\": null,\n        \"name\": \"Schwarzkopf 9N Permanent Color\"\n    },\n    {\n        \"equipmentid\": \"10\",\n        \"employeeno\": null,\n        \"name\": \"Schwarzkopf 10N Permanent Color\"\n    },\n    {\n        \"equipmentid\": \"11\",\n        \"employeeno\": \"2\",\n        \"name\": \"CHI Straightener\"\n    },\n    {\n        \"equipmentid\": \"12\",\n        \"employeeno\": \"2\",\n        \"name\": \"CHI 1'' Curling Iron\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "getServices",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/salonapp/frontend/employee/getServicesLogic.php",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"salonapp",
+								"frontend",
+								"employee",
+								"getServicesLogic.php"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "getServices",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost/salonapp/frontend/employee/getServicesLogic.php",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"salonapp",
+										"frontend",
+										"employee",
+										"getServicesLogic.php"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Fri, 16 Apr 2021 10:14:52 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.46 (Win64) OpenSSL/1.1.1j PHP/8.0.3"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.0.3"
+								},
+								{
+									"key": "Content-Length",
+									"value": "924"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "JSON"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"serviceid\": \"1\",\n        \"haircut\": \"y\",\n        \"updo\": \"y\",\n        \"perm\": null,\n        \"shampoo\": \"y\",\n        \"styling\": null,\n        \"color\": null,\n        \"cost\": \"$150\",\n        \"equipmentno\": null\n    },\n    {\n        \"serviceid\": \"2\",\n        \"haircut\": null,\n        \"updo\": null,\n        \"perm\": null,\n        \"shampoo\": \"y\",\n        \"styling\": \"y\",\n        \"color\": null,\n        \"cost\": \"$80\",\n        \"equipmentno\": null\n    },\n    {\n        \"serviceid\": \"3\",\n        \"haircut\": \"y\",\n        \"updo\": null,\n        \"perm\": null,\n        \"shampoo\": null,\n        \"styling\": null,\n        \"color\": null,\n        \"cost\": \"$50\",\n        \"equipmentno\": null\n    },\n    {\n        \"serviceid\": \"4\",\n        \"haircut\": null,\n        \"updo\": null,\n        \"perm\": null,\n        \"shampoo\": null,\n        \"styling\": null,\n        \"color\": \"y\",\n        \"cost\": \"$250\",\n        \"equipmentno\": \"4\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "addAppointment",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "http://localhost/salonapp/frontend/employee/addAppointmentLogic.php",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"salonapp",
+								"frontend",
+								"employee",
+								"addAppointmentLogic.php"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addCharacteristics",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "clientName",
+									"value": "Mike",
+									"type": "text"
+								},
+								{
+									"key": "colorFormula",
+									"value": "6N",
+									"type": "text"
+								},
+								{
+									"key": "hairLength",
+									"value": "long",
+									"type": "text"
+								},
+								{
+									"key": "hairTexture",
+									"value": "curly",
+									"type": "text"
+								},
+								{
+									"key": "hairStyle",
+									"value": "caeser",
+									"type": "text"
+								},
+								{
+									"key": "extraNotes",
+									"value": "good guy",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost/salonapp/frontend/employee/addCharacteristicsLogic.php",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"salonapp",
+								"frontend",
+								"employee",
+								"addCharacteristicsLogic.php"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "addCharacteristics",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "clientName",
+											"value": "Mike",
+											"type": "text"
+										},
+										{
+											"key": "colorFormula",
+											"value": "6N",
+											"type": "text"
+										},
+										{
+											"key": "hairLength",
+											"value": "long",
+											"type": "text"
+										},
+										{
+											"key": "hairTexture",
+											"value": "curly",
+											"type": "text"
+										},
+										{
+											"key": "hairStyle",
+											"value": "caeser",
+											"type": "text"
+										},
+										{
+											"key": "extraNotes",
+											"value": "good guy",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost/salonapp/frontend/employee/addCharacteristicsLogic.php",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"salonapp",
+										"frontend",
+										"employee",
+										"addCharacteristicsLogic.php"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Mon, 19 Apr 2021 05:24:23 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.46 (Win64) OpenSSL/1.1.1j PHP/8.0.3"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.0.3"
+								},
+								{
+									"key": "Content-Length",
+									"value": "118"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "JSON"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    \"6\",\n    \"6N\",\n    \"long\",\n    \"curly\",\n    \"caeser\",\n    \"good guy\"\n]"
+						}
+					]
+				},
+				{
+					"name": "addClient",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "salonName",
+									"value": "CalgarySalon",
+									"type": "text"
+								},
+								{
+									"key": "firstname",
+									"value": "Michael",
+									"type": "text"
+								},
+								{
+									"key": "lastname",
+									"value": "Bay",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "444 444 4444",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "michael.bay@gggmail.com",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "5555 Avenue 55",
+									"type": "text"
+								},
+								{
+									"key": "postalcode",
+									"value": "t3y5e4",
+									"type": "text"
+								},
+								{
+									"key": "city",
+									"value": "Calgary",
+									"type": "text"
+								},
+								{
+									"key": "stateorprovince",
+									"value": "AB",
+									"type": "text"
+								},
+								{
+									"key": "country",
+									"value": "Canada",
+									"type": "text"
+								},
+								{
+									"key": "discount",
+									"value": "25%",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/salonapp/frontend/employee/addClientLogic.php",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"salonapp",
+								"frontend",
+								"employee",
+								"addClientLogic.php"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "addClient",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "salonName",
+											"value": "CalgarySalon",
+											"type": "text"
+										},
+										{
+											"key": "firstname",
+											"value": "Michael",
+											"type": "text"
+										},
+										{
+											"key": "lastname",
+											"value": "Bay",
+											"type": "text"
+										},
+										{
+											"key": "phone",
+											"value": "444 444 4444",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "michael.bay@gggmail.com",
+											"type": "text"
+										},
+										{
+											"key": "address",
+											"value": "5555 Avenue 55",
+											"type": "text"
+										},
+										{
+											"key": "postalcode",
+											"value": "t3y5e4",
+											"type": "text"
+										},
+										{
+											"key": "city",
+											"value": "Calgary",
+											"type": "text"
+										},
+										{
+											"key": "stateorprovince",
+											"value": "AB",
+											"type": "text"
+										},
+										{
+											"key": "country",
+											"value": "Canada",
+											"type": "text"
+										},
+										{
+											"key": "discount",
+											"value": "25%",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost/salonapp/frontend/employee/addClientLogic.php",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"salonapp",
+										"frontend",
+										"employee",
+										"addClientLogic.php"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Mon, 19 Apr 2021 05:15:50 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.46 (Win64) OpenSSL/1.1.1j PHP/8.0.3"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.0.3"
+								},
+								{
+									"key": "Content-Length",
+									"value": "202"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "JSON"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    \"1\",\n    \"444 444 4444\",\n    \"Michael\",\n    \"Bay\",\n    \"michael.bay@gggmail.com\",\n    \"5555 Avenue 55\",\n    \"t3y5e4\",\n    \"Calgary\",\n    \"AB\",\n    \"Canada\",\n    \"25%\"\n]"
+						}
+					]
+				},
+				{
+					"name": "addEquipment",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "equipmentName",
+									"value": "Blow Dryer",
+									"type": "text"
+								},
+								{
+									"key": "employeeName",
+									"value": "Bobbu",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/salonapp/frontend/employee/addEquipmentLogic.php",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"salonapp",
+								"frontend",
+								"employee",
+								"addEquipmentLogic.php"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "addEquipment",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "equipmentName",
+											"value": "Blow Dryer",
+											"type": "text"
+										},
+										{
+											"key": "employeeName",
+											"value": "Bobbu",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost/salonapp/frontend/employee/addEquipmentLogic.php",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"salonapp",
+										"frontend",
+										"employee",
+										"addEquipmentLogic.php"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Mon, 19 Apr 2021 05:15:30 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.46 (Win64) OpenSSL/1.1.1j PHP/8.0.3"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.0.3"
+								},
+								{
+									"key": "Content-Length",
+									"value": "61"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "JSON"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    \"48\",\n    \"Blow Dryer\"\n]"
+						}
+					]
+				},
+				{
+					"name": "AddService",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "serviceOffered",
+									"value": "mens cut",
+									"type": "text"
+								},
+								{
+									"key": "serviceCost",
+									"value": "$25",
+									"type": "text"
+								},
+								{
+									"key": "equipmentName",
+									"value": "No owner",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost/salonapp/frontend/employee/addServiceLogic.php",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"salonapp",
+								"frontend",
+								"employee",
+								"addServiceLogic.php"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "AddService",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "serviceOffered",
+											"value": "mens cut",
+											"type": "text"
+										},
+										{
+											"key": "serviceCost",
+											"value": "$25",
+											"type": "text"
+										},
+										{
+											"key": "equipmentName",
+											"value": "No owner",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost/salonapp/frontend/employee/addServiceLogic.php",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"salonapp",
+										"frontend",
+										"employee",
+										"addServiceLogic.php"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Mon, 19 Apr 2021 05:14:18 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.46 (Win64) OpenSSL/1.1.1j PHP/8.0.3"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.0.3"
+								},
+								{
+									"key": "Content-Length",
+									"value": "72"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "JSON"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    \"mens cut\",\n    \"$25\",\n    \"18\"\n]"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Admin",
+			"item": [
+				{
+					"name": "getSalons",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost/salonapp/frontend/admin/getSalons.php",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"salonapp",
+								"frontend",
+								"admin",
+								"getSalons.php"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "getSalons",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost/salonapp/frontend/admin/getSalons.php",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"salonapp",
+										"frontend",
+										"admin",
+										"getSalons.php"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 08 Apr 2021 22:09:17 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.46 (Win64) OpenSSL/1.1.1j PHP/8.0.3"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.0.3"
+								},
+								{
+									"key": "Content-Length",
+									"value": "628"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "JSON"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"salonid\": \"1\",\n        \"phone\": \"(403)111-1111\",\n        \"email\": \"info@calgarysalon.com\",\n        \"name\": \"CalgarySalon\",\n        \"address\": \"123 Address NW\",\n        \"postalcode\": \"T2L2L5\",\n        \"city\": \"Calgary\",\n        \"stateorprovince\": \"Alberta\",\n        \"country\": \"Canada\"\n    },\n    {\n        \"salonid\": \"2\",\n        \"phone\": \"(702)222-2222\",\n        \"email\": \"info@lasvegassalon.com\",\n        \"name\": \"LasVegasSalon\",\n        \"address\": \"321 North Street NW\",\n        \"postalcode\": \"88901\",\n        \"city\": \"Las Vegas\",\n        \"stateorprovince\": \"Nevada\",\n        \"country\": \"USA\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "getEmployees",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/salonapp/frontend/admin/getEmployeeLogic.php",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"salonapp",
+								"frontend",
+								"admin",
+								"getEmployeeLogic.php"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "getEmployees",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost/salonapp/frontend/admin/getEmployeeLogic.php",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"salonapp",
+										"frontend",
+										"admin",
+										"getEmployeeLogic.php"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Tue, 13 Apr 2021 02:54:35 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.46 (Win64) OpenSSL/1.1.1j PHP/8.0.3"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.0.3"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "JSON"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"employeeid\": \"1\",\n        \"idsalon\": \"1\",\n        \"firstname\": \"Sam\",\n        \"lastname\": \"Brown\",\n        \"phone\": \"(403)444-2422\",\n        \"email\": \"sam@gmail.com\",\n        \"address\": \"555 Circle Ave NE\",\n        \"postalcode\": \"T0P L3M\",\n        \"city\": \"Calgary\",\n        \"stateorprovince\": \"Alberta\",\n        \"country\": \"Canada\"\n    },\n    {\n        \"employeeid\": \"2\",\n        \"idsalon\": \"1\",\n        \"firstname\": \"Crystal\",\n        \"lastname\": \"Johnson\",\n        \"phone\": \"(403)999-1234\",\n        \"email\": \"crystal@hotmail.com\",\n        \"address\": \"3213 West Ave SW\",\n        \"postalcode\": \"T6M 4LM\",\n        \"city\": \"Calgary\",\n        \"stateorprovince\": \"Alberta\",\n        \"country\": \"Canada\"\n    },\n    {\n        \"employeeid\": \"3\",\n        \"idsalon\": \"2\",\n        \"firstname\": \"Max\",\n        \"lastname\": \"White\",\n        \"phone\": \"(702)222-2314\",\n        \"email\": \"max@yahoo.com\",\n        \"address\": \"48 Avenue SE\",\n        \"postalcode\": \"88910\",\n        \"city\": \"Las Vegas\",\n        \"stateorprovince\": \"Nevada\",\n        \"country\": \"USA\"\n    },\n    {\n        \"employeeid\": \"4\",\n        \"idsalon\": \"2\",\n        \"firstname\": \"Melissa\",\n        \"lastname\": \"Brown\",\n        \"phone\": \"(702)555-5555\",\n        \"email\": \"melissa@gmail.com\",\n        \"address\": \"2039 Circle Centre SW\",\n        \"postalcode\": \"89125\",\n        \"city\": \"Las Vegas\",\n        \"stateorprovince\": \"Nevada\",\n        \"country\": \"USA\"\n    },\n    {\n        \"employeeid\": \"10\",\n        \"idsalon\": \"1\",\n        \"firstname\": \"Rawr\",\n        \"lastname\": \"Lmnop\",\n        \"phone\": \"403 555 6666\",\n        \"email\": \"zxc@gmail.com\",\n        \"address\": \"123 Tufg Rd\",\n        \"postalcode\": \"T3L ABC\",\n        \"city\": \"Calgary\",\n        \"stateorprovince\": \"AB\",\n        \"country\": \"Canada\"\n    },\n    {\n        \"employeeid\": \"11\",\n        \"idsalon\": \"1\",\n        \"firstname\": \"Rawr\",\n        \"lastname\": \"Lmnop\",\n        \"phone\": \"403 555 6666\",\n        \"email\": \"zxc@gmail.com\",\n        \"address\": \"123 Tufg Rd\",\n        \"postalcode\": \"T3L ABC\",\n        \"city\": \"Calgary\",\n        \"stateorprovince\": \"AB\",\n        \"country\": \"Canada\"\n    },\n    {\n        \"employeeid\": \"12\",\n        \"idsalon\": \"23\",\n        \"firstname\": \"Bonny\",\n        \"lastname\": \"Bonny\",\n        \"phone\": \"403 404 0049\",\n        \"email\": \"rawr@gmail.com\",\n        \"address\": \"123 tusc road\",\n        \"postalcode\": \"T3L ABC\",\n        \"city\": \"Calgary\",\n        \"stateorprovince\": \"AB\",\n        \"country\": \"Canada\"\n    },\n    {\n        \"employeeid\": \"13\",\n        \"idsalon\": \"23\",\n        \"firstname\": \"Bonny\",\n        \"lastname\": \"Bonny\",\n        \"phone\": \"403 404 0049\",\n        \"email\": \"rawr@gmail.com\",\n        \"address\": \"123 tusc road\",\n        \"postalcode\": \"T3L ABC\",\n        \"city\": \"Calgary\",\n        \"stateorprovince\": \"AB\",\n        \"country\": \"Canada\"\n    },\n    {\n        \"employeeid\": \"15\",\n        \"idsalon\": \"23\",\n        \"firstname\": \"Bonny\",\n        \"lastname\": \"Bonny\",\n        \"phone\": \"403 404 0049\",\n        \"email\": \"rawr@gmail.com\",\n        \"address\": \"123 tusc road\",\n        \"postalcode\": \"T3L ABC\",\n        \"city\": \"Calgary\",\n        \"stateorprovince\": \"AB\",\n        \"country\": \"Canada\"\n    },\n    {\n        \"employeeid\": \"16\",\n        \"idsalon\": \"23\",\n        \"firstname\": \"Bonny\",\n        \"lastname\": \"Bonny\",\n        \"phone\": \"403 404 0049\",\n        \"email\": \"rawr@gmail.com\",\n        \"address\": \"123 tusc road\",\n        \"postalcode\": \"T3L ABC\",\n        \"city\": \"Calgary\",\n        \"stateorprovince\": \"AB\",\n        \"country\": \"Canada\"\n    },\n    {\n        \"employeeid\": \"17\",\n        \"idsalon\": \"23\",\n        \"firstname\": \"Bonny\",\n        \"lastname\": \"Bonny\",\n        \"phone\": \"403 404 0049\",\n        \"email\": \"rawr@gmail.com\",\n        \"address\": \"123 tusc road\",\n        \"postalcode\": \"T3L ABC\",\n        \"city\": \"Calgary\",\n        \"stateorprovince\": \"AB\",\n        \"country\": \"Canada\"\n    },\n    {\n        \"employeeid\": \"18\",\n        \"idsalon\": \"23\",\n        \"firstname\": \"Bonny\",\n        \"lastname\": \"Bonny\",\n        \"phone\": \"403 404 0049\",\n        \"email\": \"rawr@gmail.com\",\n        \"address\": \"123 tusc road\",\n        \"postalcode\": \"T3L ABC\",\n        \"city\": \"Calgary\",\n        \"stateorprovince\": \"AB\",\n        \"country\": \"Canada\"\n    },\n    {\n        \"employeeid\": \"19\",\n        \"idsalon\": \"23\",\n        \"firstname\": \"Bonny\",\n        \"lastname\": \"Bonny\",\n        \"phone\": \"403 404 0049\",\n        \"email\": \"rawr@gmail.com\",\n        \"address\": \"123 tusc road\",\n        \"postalcode\": \"T3L ABC\",\n        \"city\": \"Calgary\",\n        \"stateorprovince\": \"AB\",\n        \"country\": \"Canada\"\n    },\n    {\n        \"employeeid\": \"20\",\n        \"idsalon\": \"23\",\n        \"firstname\": \"Bonny\",\n        \"lastname\": \"Bonny\",\n        \"phone\": \"403 404 0049\",\n        \"email\": \"rawr@gmail.com\",\n        \"address\": \"123 tusc road\",\n        \"postalcode\": \"T3L ABC\",\n        \"city\": \"Calgary\",\n        \"stateorprovince\": \"AB\",\n        \"country\": \"Canada\"\n    },\n    {\n        \"employeeid\": \"22\",\n        \"idsalon\": \"23\",\n        \"firstname\": \"Bonny\",\n        \"lastname\": \"Bonny\",\n        \"phone\": \"403 404 0049\",\n        \"email\": \"rawr@gmail.com\",\n        \"address\": \"123 tusc road\",\n        \"postalcode\": \"T3L ABC\",\n        \"city\": \"Calgary\",\n        \"stateorprovince\": \"AB\",\n        \"country\": \"Canada\"\n    },\n    {\n        \"employeeid\": \"23\",\n        \"idsalon\": \"23\",\n        \"firstname\": \"Bonny\",\n        \"lastname\": \"Bonny\",\n        \"phone\": \"403 404 0049\",\n        \"email\": \"rawr@gmail.com\",\n        \"address\": \"123 tusc road\",\n        \"postalcode\": \"T3L ABC\",\n        \"city\": \"Calgary\",\n        \"stateorprovince\": \"AB\",\n        \"country\": \"Canada\"\n    },\n    {\n        \"employeeid\": \"24\",\n        \"idsalon\": \"23\",\n        \"firstname\": \"Bonny\",\n        \"lastname\": \"Bonny\",\n        \"phone\": \"403 404 0049\",\n        \"email\": \"rawr@gmail.com\",\n        \"address\": \"123 tusc road\",\n        \"postalcode\": \"T3L ABC\",\n        \"city\": \"Calgary\",\n        \"stateorprovince\": \"AB\",\n        \"country\": \"Canada\"\n    },\n    {\n        \"employeeid\": \"25\",\n        \"idsalon\": \"23\",\n        \"firstname\": \"Bonny\",\n        \"lastname\": \"Bonny\",\n        \"phone\": \"403 404 0049\",\n        \"email\": \"rawr@gmail.com\",\n        \"address\": \"123 tusc road\",\n        \"postalcode\": \"T3L ABC\",\n        \"city\": \"Calgary\",\n        \"stateorprovince\": \"AB\",\n        \"country\": \"Canada\"\n    },\n    {\n        \"employeeid\": \"26\",\n        \"idsalon\": \"23\",\n        \"firstname\": \"Bonny\",\n        \"lastname\": \"Bonny\",\n        \"phone\": \"403 404 0049\",\n        \"email\": \"rawr@gmail.com\",\n        \"address\": \"123 tusc road\",\n        \"postalcode\": \"T3L ABC\",\n        \"city\": \"Calgary\",\n        \"stateorprovince\": \"AB\",\n        \"country\": \"Canada\"\n    },\n    {\n        \"employeeid\": \"27\",\n        \"idsalon\": \"23\",\n        \"firstname\": \"Bonny\",\n        \"lastname\": \"Bonny\",\n        \"phone\": \"403 404 0049\",\n        \"email\": \"rawr@gmail.com\",\n        \"address\": \"123 tusc road\",\n        \"postalcode\": \"T3L ABC\",\n        \"city\": \"Calgary\",\n        \"stateorprovince\": \"AB\",\n        \"country\": \"Canada\"\n    },\n    {\n        \"employeeid\": \"28\",\n        \"idsalon\": \"23\",\n        \"firstname\": \"Bonny\",\n        \"lastname\": \"Bonny\",\n        \"phone\": \"403 404 0049\",\n        \"email\": \"rawr@gmail.com\",\n        \"address\": \"123 tusc road\",\n        \"postalcode\": \"T3L ABC\",\n        \"city\": \"Calgary\",\n        \"stateorprovince\": \"AB\",\n        \"country\": \"Canada\"\n    },\n    {\n        \"employeeid\": \"29\",\n        \"idsalon\": \"23\",\n        \"firstname\": \"Bonny\",\n        \"lastname\": \"Bonny\",\n        \"phone\": \"403 404 0049\",\n        \"email\": \"rawr@gmail.com\",\n        \"address\": \"123 tusc road\",\n        \"postalcode\": \"T3L ABC\",\n        \"city\": \"Calgary\",\n        \"stateorprovince\": \"AB\",\n        \"country\": \"Canada\"\n    },\n    {\n        \"employeeid\": \"30\",\n        \"idsalon\": \"23\",\n        \"firstname\": \"Bonny\",\n        \"lastname\": \"Bonny\",\n        \"phone\": \"403 404 0049\",\n        \"email\": \"rawr@gmail.com\",\n        \"address\": \"123 tusc road\",\n        \"postalcode\": \"T3L ABC\",\n        \"city\": \"Calgary\",\n        \"stateorprovince\": \"AB\",\n        \"country\": \"Canada\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "AddEmployee",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "firstname",
+									"value": "Laura",
+									"type": "text"
+								},
+								{
+									"key": "lastname",
+									"value": "Hills",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "403 222 2235",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "Laura@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "2823 Avenue",
+									"type": "text"
+								},
+								{
+									"key": "postalcode",
+									"value": "263563",
+									"type": "text"
+								},
+								{
+									"key": "city",
+									"value": "Calgary",
+									"type": "text"
+								},
+								{
+									"key": "stateorprovince",
+									"value": "Alberta",
+									"type": "text"
+								},
+								{
+									"key": "country",
+									"value": "Canada",
+									"type": "text"
+								},
+								{
+									"key": "salonName",
+									"value": "CalgarySalon",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost/salonapp/frontend/admin/addEmployeeLogic.php",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"salonapp",
+								"frontend",
+								"admin",
+								"addEmployeeLogic.php"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "AddEmployee",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "firstname",
+											"value": "Bonny",
+											"type": "text"
+										},
+										{
+											"key": "lastname",
+											"value": "Bonny",
+											"type": "text"
+										},
+										{
+											"key": "phone",
+											"value": "403 404 0049",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "rawr@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "address",
+											"value": "123 tusc road",
+											"type": "text"
+										},
+										{
+											"key": "postalcode",
+											"value": "T3L ABC",
+											"type": "text"
+										},
+										{
+											"key": "city",
+											"value": "Calgary",
+											"type": "text"
+										},
+										{
+											"key": "stateorprovince",
+											"value": "AB",
+											"type": "text"
+										},
+										{
+											"key": "country",
+											"value": "Canada",
+											"type": "text"
+										},
+										{
+											"key": "salonName",
+											"value": "APlace",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost/salonapp/frontend/admin/addEmployeeLogic.php",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"salonapp",
+										"frontend",
+										"admin",
+										"addEmployeeLogic.php"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Fri, 16 Apr 2021 10:18:54 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.46 (Win64) OpenSSL/1.1.1j PHP/8.0.3"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.0.3"
+								},
+								{
+									"key": "Content-Length",
+									"value": "189"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "JSON"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    \"11\",\n    \"Bonny\",\n    \"Bonny\",\n    \"403 404 0049\",\n    \"rawr@gmail.com\",\n    \"123 tusc road\",\n    \"T3L ABC\",\n    \"Calgary\",\n    \"AB\",\n    \"Canada\"\n]"
+						},
+						{
+							"name": "AddEmployee",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "firstname",
+											"value": "Laura",
+											"type": "text"
+										},
+										{
+											"key": "lastname",
+											"value": "Hills",
+											"type": "text"
+										},
+										{
+											"key": "phone",
+											"value": "403 222 2235",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "Laura@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "address",
+											"value": "2823 Avenue",
+											"type": "text"
+										},
+										{
+											"key": "postalcode",
+											"value": "263563",
+											"type": "text"
+										},
+										{
+											"key": "city",
+											"value": "Calgary",
+											"type": "text"
+										},
+										{
+											"key": "stateorprovince",
+											"value": "Alberta",
+											"type": "text"
+										},
+										{
+											"key": "country",
+											"value": "Canada",
+											"type": "text"
+										},
+										{
+											"key": "salonName",
+											"value": "CalgarySalon",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost/salonapp/frontend/admin/addEmployeeLogic.php",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"salonapp",
+										"frontend",
+										"admin",
+										"addEmployeeLogic.php"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Fri, 16 Apr 2021 10:24:10 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.46 (Win64) OpenSSL/1.1.1j PHP/8.0.3"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.0.3"
+								},
+								{
+									"key": "Content-Length",
+									"value": "191"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "JSON"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    \"1\",\n    \"Laura\",\n    \"Hills\",\n    \"403 222 2235\",\n    \"Laura@gmail.com\",\n    \"2823 Avenue\",\n    \"263563\",\n    \"Calgary\",\n    \"Alberta\",\n    \"Canada\"\n]"
+						}
+					]
+				},
+				{
+					"name": "GetReceptionists",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/salonapp/frontend/admin/getReceptionistLogic.php",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"salonapp",
+								"frontend",
+								"admin",
+								"getReceptionistLogic.php"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "GetReceptionists",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost/salonapp/frontend/admin/getReceptionistLogic.php",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"salonapp",
+										"frontend",
+										"admin",
+										"getReceptionistLogic.php"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Fri, 16 Apr 2021 09:56:22 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.46 (Win64) OpenSSL/1.1.1j PHP/8.0.3"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.0.3"
+								},
+								{
+									"key": "Content-Length",
+									"value": "72"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "JSON"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"receptionistid\": \"2\",\n        \"employeeid\": \"3\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "GetStylists",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/salonapp/frontend/admin/getStylistLogic.php",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"salonapp",
+								"frontend",
+								"admin",
+								"getStylistLogic.php"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "GetStylists",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost/salonapp/frontend/admin/getStylistLogic.php",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"salonapp",
+										"frontend",
+										"admin",
+										"getStylistLogic.php"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Fri, 16 Apr 2021 09:56:45 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.46 (Win64) OpenSSL/1.1.1j PHP/8.0.3"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.0.3"
+								},
+								{
+									"key": "Content-Length",
+									"value": "75"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "JSON"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"employeenumber\": \"4\",\n        \"idhairstylist\": \"2\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "AddSalon",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "phone",
+									"value": "403 254 3323",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "info@Hair.com",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "HairPlace",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "1192 Ave NE",
+									"type": "text"
+								},
+								{
+									"key": "postalcode",
+									"value": "T3M 2N1",
+									"type": "text"
+								},
+								{
+									"key": "city",
+									"value": "Calgary",
+									"type": "text"
+								},
+								{
+									"key": "stateorprovince",
+									"value": "Alberta",
+									"type": "text"
+								},
+								{
+									"key": "country",
+									"value": "Canada",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost/salonapp/frontend/admin/addSalonLogic.php?phone=658 665 3463&email=info@HairPlace.com&name=HairPlace&address=2321 North Ave NW&postalcode=T5L 2M3&city=Calgary&stateorprovince=Alberta&country=Canada",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"salonapp",
+								"frontend",
+								"admin",
+								"addSalonLogic.php"
+							],
+							"query": [
+								{
+									"key": "phone",
+									"value": "658 665 3463"
+								},
+								{
+									"key": "email",
+									"value": "info@HairPlace.com"
+								},
+								{
+									"key": "name",
+									"value": "HairPlace"
+								},
+								{
+									"key": "address",
+									"value": "2321 North Ave NW"
+								},
+								{
+									"key": "postalcode",
+									"value": "T5L 2M3"
+								},
+								{
+									"key": "city",
+									"value": "Calgary"
+								},
+								{
+									"key": "stateorprovince",
+									"value": "Alberta"
+								},
+								{
+									"key": "country",
+									"value": "Canada"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "AddSalon",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "phone",
+											"value": "403 254 3323",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "info@Hair.com",
+											"type": "text"
+										},
+										{
+											"key": "name",
+											"value": "HairPlace",
+											"type": "text"
+										},
+										{
+											"key": "address",
+											"value": "1192 Ave NE",
+											"type": "text"
+										},
+										{
+											"key": "postalcode",
+											"value": "T3M 2N1",
+											"type": "text"
+										},
+										{
+											"key": "city",
+											"value": "Calgary",
+											"type": "text"
+										},
+										{
+											"key": "stateorprovince",
+											"value": "Alberta",
+											"type": "text"
+										},
+										{
+											"key": "country",
+											"value": "Canada",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost/salonapp/frontend/admin/addSalonLogic.php?phone=658 665 3463&email=info@HairPlace.com&name=HairPlace&address=2321 North Ave NW&postalcode=T5L 2M3&city=Calgary&stateorprovince=Alberta&country=Canada",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"salonapp",
+										"frontend",
+										"admin",
+										"addSalonLogic.php"
+									],
+									"query": [
+										{
+											"key": "phone",
+											"value": "658 665 3463"
+										},
+										{
+											"key": "email",
+											"value": "info@HairPlace.com"
+										},
+										{
+											"key": "name",
+											"value": "HairPlace"
+										},
+										{
+											"key": "address",
+											"value": "2321 North Ave NW"
+										},
+										{
+											"key": "postalcode",
+											"value": "T5L 2M3"
+										},
+										{
+											"key": "city",
+											"value": "Calgary"
+										},
+										{
+											"key": "stateorprovince",
+											"value": "Alberta"
+										},
+										{
+											"key": "country",
+											"value": "Canada"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Fri, 16 Apr 2021 10:48:24 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.46 (Win64) OpenSSL/1.1.1j PHP/8.0.3"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.0.3"
+								},
+								{
+									"key": "Content-Length",
+									"value": "168"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "JSON"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    \"403 254 3323\",\n    \"info@Hair.com\",\n    \"HairPlace\",\n    \"1192 Ave NE\",\n    \"T3M 2N1\",\n    \"Calgary\",\n    \"Alberta\",\n    \"Canada\"\n]"
+						}
+					]
+				},
+				{
+					"name": "AddEmployee",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "salonName",
+									"value": "CalgarySalon",
+									"type": "text"
+								},
+								{
+									"key": "firstname",
+									"value": "Mel",
+									"type": "text"
+								},
+								{
+									"key": "lastname",
+									"value": "C",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "403 210 2300",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "mel@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "2133 Ave",
+									"type": "text"
+								},
+								{
+									"key": "postalcode",
+									"value": "3439834",
+									"type": "text"
+								},
+								{
+									"key": "city",
+									"value": "Calgary",
+									"type": "text"
+								},
+								{
+									"key": "stateorprovince",
+									"value": "Alberta",
+									"type": "text"
+								},
+								{
+									"key": "country",
+									"value": "Canada",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/salonapp/frontend/admin/addEmployeeLogic.php",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"salonapp",
+								"frontend",
+								"admin",
+								"addEmployeeLogic.php"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "AddEmployee",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "salonName",
+											"value": "CalgarySalon",
+											"type": "text"
+										},
+										{
+											"key": "firstname",
+											"value": "Mel",
+											"type": "text"
+										},
+										{
+											"key": "lastname",
+											"value": "C",
+											"type": "text"
+										},
+										{
+											"key": "phone",
+											"value": "403 210 2300",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "mel@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "address",
+											"value": "2133 Ave",
+											"type": "text"
+										},
+										{
+											"key": "postalcode",
+											"value": "3439834",
+											"type": "text"
+										},
+										{
+											"key": "city",
+											"value": "Calgary",
+											"type": "text"
+										},
+										{
+											"key": "stateorprovince",
+											"value": "Alberta",
+											"type": "text"
+										},
+										{
+											"key": "country",
+											"value": "Canada",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost/salonapp/frontend/admin/addEmployeeLogic.php",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"salonapp",
+										"frontend",
+										"admin",
+										"addEmployeeLogic.php"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Mon, 19 Apr 2021 04:50:26 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.46 (Win64) OpenSSL/1.1.1j PHP/8.0.3"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.0.3"
+								},
+								{
+									"key": "Content-Length",
+									"value": "181"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "JSON"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    \"1\",\n    \"Mel\",\n    \"C\",\n    \"403 210 2300\",\n    \"mel@gmail.com\",\n    \"2133 Ave\",\n    \"3439834\",\n    \"Calgary\",\n    \"Alberta\",\n    \"Canada\"\n]"
+						}
+					]
+				},
+				{
+					"name": "AddStylist",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "employeeName",
+									"value": "Merissa",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/salonapp/frontend/admin/addStylistLogic.php",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"salonapp",
+								"frontend",
+								"admin",
+								"addStylistLogic.php"
+							],
+							"query": [
+								{
+									"key": "employeeName",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "AddStylist",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "employeeName",
+											"value": "Merissa",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost/salonapp/frontend/admin/addStylistLogic.php",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"salonapp",
+										"frontend",
+										"admin",
+										"addStylistLogic.php"
+									],
+									"query": [
+										{
+											"key": "employeeName",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Mon, 19 Apr 2021 04:56:15 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.46 (Win64) OpenSSL/1.1.1j PHP/8.0.3"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.0.3"
+								},
+								{
+									"key": "Content-Length",
+									"value": "45"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "JSON"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    \"47\"\n]"
+						}
+					]
+				},
+				{
+					"name": "AddReceptionist",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "employeeid",
+									"value": "48",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost/salonapp/frontend/admin/addReceptionistLogic.php",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"salonapp",
+								"frontend",
+								"admin",
+								"addReceptionistLogic.php"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "AddReceptionist",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "employeeid",
+											"value": "48",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost/salonapp/frontend/admin/addReceptionistLogic.php",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"salonapp",
+										"frontend",
+										"admin",
+										"addReceptionistLogic.php"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Mon, 19 Apr 2021 05:00:36 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.46 (Win64) OpenSSL/1.1.1j PHP/8.0.3"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.0.3"
+								},
+								{
+									"key": "Content-Length",
+									"value": "50"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "JSON"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    \"48\"\n]"
+						}
+					]
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "http://petstore.swagger.io/v1",
+			"type": "string"
+		}
+	]
+}
